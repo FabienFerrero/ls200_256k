@@ -27,6 +27,7 @@
 
 #define WAIT_S 1  // loop delay in seconds
 
+#include <SPI.h>
 #include <RTC.h>
 #include <time.h>
 #include <AHT10.h> // https://github.com/enjoyneering/AHT10.git
