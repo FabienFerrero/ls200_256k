@@ -248,8 +248,11 @@ void loop() {
   delay(10);
 
   KX023();
+  delay(10);
   HP203B();
+  delay(10);
   AHT10_();
+  delay(10);
   LTR303_(); 
 
 
