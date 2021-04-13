@@ -1,12 +1,12 @@
 {
   "packages": [
     {
-      "name": "ls200_RFThings",
-      "maintainer": "Tlera Corp/Lacuna Space/RFThings",
+      "name": "lacunaspace",
+      "maintainer": "Tlera Corp/Lacuna Space",
       "websiteURL": "https://github.com/LacunaSpace/arduino-STM32L4/tree/lacuna",
       "email": "info@lacuna.space",
       "help": {
-        "online": "https://github.com/FabienFerrero/ls200_256k"
+        "online": "https://github.com/LacunaSpace/arduino-STM32L4/tree/lacuna"
       },
       "platforms": [
         {
