@@ -12,3 +12,11 @@ Board Manager
 * Add https://lacunaspace.github.io/arduino-STM32L4-Lacuna/package_STM32L4_Lacuna_boards_index.json as an "Additional Board Manager URL"
 * Open the Boards Manager from the Tools -> Board menu and install "STM32L4 Boards (Lacuna) by Tlera Corp/Lacuna Space"
 * Select your STM32L4 board from the Tools -> Board menu
+
+The board has been successfully tested with several SX1262 library :
+
+LoRaWAN Mac protocal :
+https://github.com/FabienFerrero/basicmac    forked from : https://github.com/LacunaSpace/basicmac
+
+LoRa Physical layer :
+https://github.com/StuartsProjects/SX12XX-LoRa
