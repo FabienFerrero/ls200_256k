@@ -15,7 +15,7 @@ Board Manager
 
 The board has been successfully tested with several SX1262 library :
 
-LoRaWAN Mac protocal :
+LoRaWAN Mac protocol :
 https://github.com/FabienFerrero/basicmac    forked from : https://github.com/LacunaSpace/basicmac
 
 LoRa Physical layer :
