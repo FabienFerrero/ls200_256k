@@ -21,9 +21,10 @@ https://github.com/FabienFerrero/basicmac    forked from : https://github.com/La
 
 LoRa Physical layer :
 https://github.com/StuartsProjects/SX12XX-LoRa
-=======
+
 
 Known issues :
 
 * For a GNSS fix with multiple GNSS system (not only GPS, but also Galileo or Glonass), the number of satellite and altitude is always 0 
->>>>>>> Stashed changes
+*  AHT10 sensor has been removed because on conflict on I2C
+
