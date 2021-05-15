@@ -28,9 +28,10 @@
 #define WAIT_S 1  // loop delay in seconds
 
 #include <SPI.h>
+#include <Wire.h>
 #include <RTC.h>
 #include <time.h>
-#include <AHT10.h> // https://github.com/enjoyneering/AHT10.git
+//#include <AHT10.h> // https://github.com/enjoyneering/AHT10.git
 #include <LTR303.h> // https://github.com/automote/LTR303
 
 
@@ -58,7 +59,7 @@ const int regAddressCNTL1 = 0x18;
 
 uint8_t readStatus = 0;
 
-AHT10 myAHT10(AHT10_ADDRESS_0X38);
+//AHT10 myAHT10(AHT10_ADDRESS_0X38);
 
 // Create an LTR303 object, here called "light":
 LTR303 light;
@@ -194,12 +195,12 @@ void setup() {
   //--------------------------------------------------setup LPF
 
 //AHT10
-  while (myAHT10.begin() != true)
-  {
-    Serial.println(F("AHT10 not connected or fail to load calibration coefficient")); //(F()) save string to flash & keeps dynamic memory free
-    delay(5000);
-  }
-  Serial.println(F("AHT10 OK"));
+//  while (myAHT10.begin() != true)
+//  {
+//    Serial.println(F("AHT10 not connected or fail to load calibration coefficient")); //(F()) save string to flash & keeps dynamic memory free
+//    delay(5000);
+//  }
+//  Serial.println(F("AHT10 OK"));
 
 
 // Initialize the LTR303 library
@@ -250,8 +251,8 @@ void loop() {
   KX023();
   delay(10);
   HP203B();
-  delay(10);
-  AHT10_();
+//  delay(10);
+//  AHT10_();
   delay(10);
   LTR303_(); 
 
@@ -461,12 +462,12 @@ unsigned int data[6];
   //Serial.println(" F");
 }
 
-void AHT10_(){
-  /* DEMO - 1, every temperature or humidity call will read 6 bytes over I2C, total 12 bytes */
-  //Serial.println(F("DEMO 1: read 12-bytes, show 255 if communication error is occurred"));
-  Serial.print(F("AHT10: Temperature: ")); Serial.print(myAHT10.readTemperature()); Serial.println(F(" +-0.3C")); //by default "AHT10_FORCE_READ_DATA"
-  Serial.print(F("AHT10: Humidity...: ")); Serial.print(myAHT10.readHumidity());    Serial.println(F(" +-2%"));   //by default "AHT10_FORCE_READ_DATA"
-}
+//void AHT10_(){
+//  /* DEMO - 1, every temperature or humidity call will read 6 bytes over I2C, total 12 bytes */
+//  //Serial.println(F("DEMO 1: read 12-bytes, show 255 if communication error is occurred"));
+//  Serial.print(F("AHT10: Temperature: ")); Serial.print(myAHT10.readTemperature()); Serial.println(F(" +-0.3C")); //by default "AHT10_FORCE_READ_DATA"
+//  Serial.print(F("AHT10: Humidity...: ")); Serial.print(myAHT10.readHumidity());    Serial.println(F(" +-2%"));   //by default "AHT10_FORCE_READ_DATA"
+//}
 
 void LTR303_(){
   int ms = 1000;
