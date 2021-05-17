@@ -6,9 +6,7 @@
 Installing
 Board Manager
 
-Please use this repo to configure your Arduino IDE with RFThings DK Blue
-
-https://github.com/RFThings/arduino-STM32L4
+Please use the official RFTHings repository to configure your Arduino IDE with RFThings DK Blue : https://github.com/RFThings/arduino-STM32L4
 
 The board has been successfully tested with several SX1262 library :
 
