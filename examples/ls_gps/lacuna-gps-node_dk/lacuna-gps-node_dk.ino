@@ -280,8 +280,8 @@ void setup() {
   lsCreateDefaultLoraTxParams(&txParams, REGION);
 
   // modify LoRa parameters
-  txParams.power = 17;
-  txParams.spreadingFactor = lsLoraSpreadingFactor_10;
+  txParams.power = 14;
+  txParams.spreadingFactor = lsLoraSpreadingFactor_8;
 
   // reception parameters for Lacuna downlink 
   lsCreateDefaultLoraTxParams(&SatrxParams, REGION);
