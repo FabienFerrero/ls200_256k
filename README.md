@@ -13,6 +13,8 @@ The board has been successfully tested with several SX1262 library :
 LoRaWAN Mac protocol :
 https://github.com/FabienFerrero/basicmac    forked from : https://github.com/LacunaSpace/basicmac
 
+Warning: Please add : "#define ARDUINO_STM32L4_LS200" in the code to make it work.
+
 LoRa Physical layer :
 https://github.com/StuartsProjects/SX12XX-LoRa
 
