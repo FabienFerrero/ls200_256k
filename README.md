@@ -3,8 +3,8 @@
 
 
 
-## Installing
-Board Manager
+## Installing Board Manager
+
 
 Please use the official RFTHings repository to configure your Arduino IDE with RFThings DK Blue : https://github.com/RFThings/arduino-STM32L4
 
